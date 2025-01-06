@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 export default function Header() {
   const NavOptions = (
     <>
@@ -18,10 +18,10 @@ export default function Header() {
         <Link to="/our-shop">Our Shop</Link>
       </li>
     </>
-  )
+  );
 
   return (
-    <div className="navbar bg-base-100 fixed z-10 bg-opacity-40">
+    <div className="navbar  fixed z-10 bg-[rgba(21,21,21,50%)]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -56,5 +56,5 @@ export default function Header() {
         <a className="btn">Button</a>
       </div>
     </div>
-  )
+  );
 }

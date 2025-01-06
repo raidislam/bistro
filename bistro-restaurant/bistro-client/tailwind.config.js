@@ -2,8 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        cinzel: ["Cinzel", "serif"],
+      },
+    },
   },
   // eslint-disable-next-line no-undef
   plugins: [require("daisyui")],
-}
+};

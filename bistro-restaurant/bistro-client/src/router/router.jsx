@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom"
-import Main from "../Layout/Main"
-import HomePage from "../pages/Home"
-import Contact from "../component/Contact/Contact"
-import Dashboard from "../component/Dashboard/Dashboard"
-import Shop from "../component/Shop/Shop"
-import OurMenuPage from "../pages/OurMenu"
+import { createBrowserRouter } from "react-router-dom";
+import Contact from "../component/Contact/Contact";
+import Dashboard from "../component/Dashboard/Dashboard";
+import Main from "../Layout/Main";
+import HomePage from "../pages/Home";
+import OurMenuPage from "../pages/OurMenu";
+import OurShopPage from "../pages/OurShop";
 
 export const router = createBrowserRouter([
   {
@@ -29,8 +29,8 @@ export const router = createBrowserRouter([
       },
       {
         path: "our-shop",
-        element: <Shop />,
+        element: <OurShopPage />,
       },
     ],
   },
-])
+]);
